@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,33 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <div class="container">
+    <div class="logo"><img src="odin-lined.png" alt="logo">ODIN</div>
+    <span id="credits">Photo by <a
+        href="https://unsplash.com/@doctortinieblas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benjamin
+        Massello</a> on <a
+        href="https://unsplash.com/es/fotos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+  </div>
+  <div class="container">
+    <p class="bold">This is not a real online service! You know you need something like this in your life to help you
+      realize your deepest dreams.<br>Sign up <span>now</span> to get started.<br><br>You <span>know</span> you want to.
+    </p>
+    <form id="my_form" action="" method="get">
+      <Legend>Let's do this!</Legend>
+      <div id="labels">
+        <label for="first_name">FIRST NAME<input id="first_name" type="text"></label>
+        <label for="last_name">LAST NAME<input id="last_name" type="text"></label>
+        <label for="email">EMAIL<input id="email" type="email"></label>
+        <label for="phone">PHONE NUMBER<input id="phone" type="tel"></label>
+        <label for="password">PASSWORD<input id="password" type="text"></label>
+        <label for="confirm_password">CONFIRM PASSWORD<input id="confirm_password" type="text"></label>
+      </div>
+    </form>
+    <button form="my_form" type="submit">Create Account</button>
+    <p class="login">Already have an account? <a href="#">Log in</a></p>
+  </div>
 </body>
+
 </html>

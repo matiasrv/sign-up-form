@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --left_space: 40px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+body {
+  display: flex;
+  background-image: url(background.jpg);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#labels {
+  margin: 10px 0;
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+body>:first-child {
+  width: 600px;
+  height: 100%;
+  position: relative;
+  align-items: center;
+}
+
+body>:last-child {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+
+#credits {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  margin-top: 30%;
+  font-size: 56px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logo>img{
+  width: auto;
+  height: 90%;
+}
+#credits,
+span>a {
+  justify-self: flex-start;
+  color: white;
+}
+
+#credits {
+  position: absolute;
+  bottom: 0;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 40px 0;
+  padding: var(--left_space);
+  padding-right: 100px;
+}
+
+.bold>span {
+  font-style: italic;
+}
+
+form {
+  width: 100%;
+  padding: 15px 0;
+  padding-left: var(--left_space);
+  margin: 30px 0;
+  background-color: #fff;
+}
+
+label {
+  width: 200px;
+  font-weight: bold;
+  display: block;
+  font-size: 10px;
+}
+
+button,
+.login {
+  margin: 15px 0;
+  padding-left: var(--left_space);
+}
+
+button {
+  padding: 10px;
+  margin-left: var(--left_space);
+  width: 200px;
+}
+legend {
+  font-weight: bold;
+}
