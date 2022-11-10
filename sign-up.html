@@ -11,10 +11,10 @@
 
 <body>
   <div class="container">
-    <div class="logo"><img src="odin-lined.png" alt="logo">ODIN</div>
-    <span id="credits">Photo by <a
+    <div class="logo"><img src="images/odin-lined.png" alt="logo">ODIN</div>
+    <span id="credits">Photo by <a target="_blank"
         href="https://unsplash.com/@doctortinieblas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benjamin
-        Massello</a> on <a
+        Massello</a> on <a target="_blank"
         href="https://unsplash.com/es/fotos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
   </div>
   <div class="container">
@@ -28,8 +28,9 @@
         <label for="last_name">LAST NAME<input id="last_name" type="text"></label>
         <label for="email">EMAIL<input id="email" type="email"></label>
         <label for="phone">PHONE NUMBER<input id="phone" type="tel"></label>
-        <label for="password">PASSWORD<input id="password" type="text"></label>
-        <label for="confirm_password">CONFIRM PASSWORD<input id="confirm_password" type="text"></label>
+        <label for="password">PASSWORD<input id="password" type="password" required><span></span></label>
+        <label for="confirm_password">CONFIRM PASSWORD<input id="confirm_password" type="password"
+            required><span></span></label>
       </div>
     </form>
     <button form="my_form" type="submit">Create Account</button>
