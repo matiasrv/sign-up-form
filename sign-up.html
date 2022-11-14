@@ -25,13 +25,15 @@
     <form id="my_form" action="" method="get">
       <Legend>Let's do this!</Legend>
       <div id="labels">
-        <label for="first_name">FIRST NAME<input id="first_name" type="text"></label>
-        <label for="last_name">LAST NAME<input id="last_name" type="text"></label>
-        <label for="email">EMAIL<input id="email" type="email"></label>
-        <label for="phone">PHONE NUMBER<input id="phone" type="tel"></label>
-        <label for="password">PASSWORD<input id="password" min="8" type="password" required><span></span></label>
-        <label for="confirm_password">CONFIRM PASSWORD<input id="confirm_password" min="8" type="password"
+        <label for="first_name">FIRST NAME<input id="first_name" type="text" required></label>
+        <label for="last_name">LAST NAME<input id="last_name" type="text" required></label>
+        <label for="email">EMAIL<input placeholder="example@mail.com" id="email" type="email"></label>
+        <label for="phone">PHONE NUMBER<input placeholder="000-000-0000" pattern="(\d{3}[\-]\d{3}[\-]\d{4})"
+            title="Please enter a valid phone number" id="phone" type="tel"></label>
+        <label for="password">PASSWORD<input id="password" placeholder="********" type="password"
             required><span></span></label>
+        <label for="confirm_password">CONFIRM PASSWORD<input placeholder="********" id="confirm_password"
+            type="password" required><span></span></label>
       </div>
     </form>
     <button form="my_form" type="submit">Create Account</button>

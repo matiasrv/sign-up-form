@@ -108,8 +108,8 @@ form {
 }
 
 label {
-  width: 200px;
-  display: block;
+  width: 250px;
+  padding-right: 50px;
   font-size: 0.6rem;
   position: relative;
 }
@@ -145,6 +145,22 @@ legend {
   bottom: -45%;
   left: 0px;
 }
+#password.short+span::after{
+  content: "*The password needs 8 characters";
+  color: red;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: -45%;
+  left: 0px;
+}
+#password.alphanum+span::after{
+  content: "*Only alphanumeric characters accepted";
+  color: red;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: -45%;
+  left: 0px;
+}
 .valid+span::after{
   content: "✔";
   color: green;
@@ -157,5 +173,8 @@ legend {
   border: 1px solid red;
 }
 .valid {
+  border: 1px solid green;
+}
+input:user-valid {
   border: 1px solid green;
 }

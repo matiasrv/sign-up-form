@@ -12,18 +12,28 @@ inputs.forEach(input => {
 });
 
 function validate_password() {
-  let valid = true
-  if (inputs[0].value != "" && inputs[0].value.length >= 8)
-    inputs[0].className = "valid";
-  else {
-    inputs[0].className = "error"
-    valid = false
+  if (/\s/.test(inputs[0].value)) {
+    inputs[0].className = "alphanum"
+    return false
   }
+  if ((/\w+/.test(inputs[0].value) || inputs[0].value == "") && (inputs[0].value.length < 8)) {
+    inputs[0].className = "short";
+    console.log("valid")
+    return false
+  }
+  inputs[0].className = "valid";
+
+  let valid = true
 
   if (inputs[1].value != "" && inputs[1].value.length >= 8)
     inputs[1].className = "valid";
   else {
     inputs[1].className = "error"
+    valid = false
+  }
+
+  if (inputs[0].value != inputs[1].value) {
+    inputs[0].className = "error valid"
     valid = false
   }
   return valid
