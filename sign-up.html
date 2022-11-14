@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="js/validation.js" defer></script>
 </head>
 
 <body>
@@ -28,8 +29,8 @@
         <label for="last_name">LAST NAME<input id="last_name" type="text"></label>
         <label for="email">EMAIL<input id="email" type="email"></label>
         <label for="phone">PHONE NUMBER<input id="phone" type="tel"></label>
-        <label for="password">PASSWORD<input id="password" type="password" required><span></span></label>
-        <label for="confirm_password">CONFIRM PASSWORD<input id="confirm_password" type="password"
+        <label for="password">PASSWORD<input id="password" min="8" type="password" required><span></span></label>
+        <label for="confirm_password">CONFIRM PASSWORD<input id="confirm_password" min="8" type="password"
             required><span></span></label>
       </div>
     </form>

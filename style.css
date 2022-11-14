@@ -11,6 +11,8 @@
 
 a {
   text-decoration-line: none;
+  color:#7b9700;
+  font-weight: bolder;
 }
 
 body {
@@ -49,7 +51,7 @@ body>:last-child {
 
 #credits {
   background-color: rgba(0, 0, 0, 0.5);
-  /* margin-bottom: 5%; */
+  margin-bottom: 2%;
 }
 @font-face {
   font-family: 'Norse-Bold';
@@ -61,7 +63,7 @@ body>:last-child {
   align-items: center;
   color: white;
   margin-top: 30%;
-  font-size: 56px;
+  font-size: 4rem;
   font-family: 'Norse-Bold','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
   height: 100px;
@@ -101,14 +103,14 @@ form {
   padding-left: var(--left_space);
   background-color: #fff;
   box-shadow: 0px 5px rgba(0, 0, 0, 0.15);
-  color: grey;
+  color: rgba(54, 97, 214, 0.795);
   font-weight: bolder;
 }
 
 label {
   width: 200px;
   display: block;
-  font-size: 10px;
+  font-size: 0.6rem;
   position: relative;
 }
 
@@ -122,26 +124,38 @@ input{
   padding: 2px 8px;
 }
 button {
-  padding: 10px;
+  padding: 2%;
   margin: 3% 0 3% var(--left_space);
-  width: 20%;
+  width: max(10%, 200px);
   border-radius: 8px;
   color: white;
-  font-size: 16px;
-  background-color: #596D48;
+  font-size: 1rem;
+  background-color: #c46336;
+  font-weight: bold;
 }
 
 legend {
   color: black;
 }
-#password:invalid+span::after{
+#password.error+span::after{
   content: "*Passwords do not match";
   color: red;
-  font-size: 9px;
+  font-size: 0.7rem;
   position: absolute;
-  bottom: -12px;
+  bottom: -45%;
   left: 0px;
 }
-input:invalid {
+.valid+span::after{
+  content: "✔";
+  color: green;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 5%;
+  right: -5%;
+}
+.error {
   border: 1px solid red;
+}
+.valid {
+  border: 1px solid green;
 }
